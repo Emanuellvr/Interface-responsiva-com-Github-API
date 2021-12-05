@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/38aa94ea20.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function start(){
+            carregarPerfil()
+            carregarRepo()
+        }
+    </script>
+</head>
+
+
+
+<body onload="start()">
+
+    <!--
+        Header
+    -->
+    <header class="p-3 bg-middle text-black">
+        <div class="container  nav-menu">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+                <input type="checkbox" id="menuToggle">
+                <label for="menuToggle" class="menu-icon">
+                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-times-circle"></i>
+                </label>                
+
+                <ul class="menu nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="iten-menu px-2 ">Home</a></li>
+                    <li><a href="#" class="iten-menu px-2 ">Features</a></li>
+                    <li><a href="#" class="iten-menu px-2 ">Pricing</a></li>
+                    <li><a href="#" class="iten-menu px-2 ">FAQs</a></li>
+                    <li><a href="#" class="iten-menu px-2 ">About</a></li>
+                </ul>
+
+                <form class="search col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input type="search" class="form-control" placeholder="Pesquisar" aria-label="Search">
+                </form>
+
+            </div>
+        </div>
+
+
+    </header>
+
+    <!--
+        Main Area
+    -->
+    <main class="container main" >
+        <div class="row" id="perfil">
+            <!-- Function carregar perfil -->            
+        </div>
+
+
+        <!-- Section Projetos -->
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start px-5 pt-4">
+            <h2 class="col-12 col-lg-auto me-lg-auto">
+                Projetos
+            </h2>
+
+            <div class="dropdown">
+                <a class="btn btn-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    CATEGORIA: Todos
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container py-3">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 text-center">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <img src="https://winaero.com/blog/wp-content/uploads/2019/11/Photos-new-icon.png" alt="" class="img-fluid">
+                    <figcaption class="figure-caption"><b>Projeto A - 2021.</b></figcaption>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <img src="https://winaero.com/blog/wp-content/uploads/2019/11/Photos-new-icon.png" alt="" class="img-fluid">
+                    <figcaption class="figure-caption"><b>Projeto B - 2021.</b></Projeto>
+                    </figcaption>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <img src="https://winaero.com/blog/wp-content/uploads/2019/11/Photos-new-icon.png" alt="" class="img-fluid">
+                    <figcaption class="figure-caption"><b>Projeto C - 2021.</b></figcaption>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <img src="https://winaero.com/blog/wp-content/uploads/2019/11/Photos-new-icon.png" alt="" class="img-fluid">
+                    <figcaption class="figure-caption"><b>Projeto D - 2021.</b></figcaption>
+                </div> 
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end py-4 px-4">
+                <button id="carregarProj" type="button" class="btn btn-dark me-md-2">+ Carregar mais projetos</button>
+            </div>
+        </div>
+
+        <!-- Section experiencia -->
+        <div class="container">
+            <h2 class="col-12 col-lg-auto me-lg-auto">Experiência</h2>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-2 text-center">
+                    <img class="img_empresa img-fluid" src="http://radioamerica.arquidiocesebh.org.br/wp-content/uploads/2017/10/puc-minas-1-1008x1024.jpg" alt="" style="padding: 10px;">
+                </div>
+                <div class="col-12 col-sm-12 col-md-7 col-lg-6 col-xl-8 p-3">
+                    <h4>Cargo/Função</h4>
+                    <p class="py-2">Pellentesque consequat mauris vel tellus fermentum, id iaculis magna ullamcorper. Donec varius tristique purus sit amet accumsan. Mauris sit amet tortor vitae turpis tincidunt luctus in pulvinar nibh. Phasellus vitae quam ut neque
+                        fringilla eleifend.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-2 text-center">
+                    <img class="img_empresa img-fluid" src="http://radioamerica.arquidiocesebh.org.br/wp-content/uploads/2017/10/puc-minas-1-1008x1024.jpg" alt="" style="padding: 10px;">
+                </div>
+                <div class=" col-12 col-sm-12 col-md-7 col-lg-6 col-xl-9 p-3 ">
+                    <h4>Cargo/Função</h4>
+                    <p class="py-2 ">Pellentesque consequat mauris vel tellus fermentum, id iaculis magna ullamcorper. Donec varius tristique purus sit amet accumsan. Mauris sit amet tortor vitae turpis tincidunt luctus in pulvinar nibh. Phasellus vitae quam ut neque
+                        fringilla eleifend.</p>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-2 text-center ">
+                    <img class="img_empresa img-fluid " src="http://radioamerica.arquidiocesebh.org.br/wp-content/uploads/2017/10/puc-minas-1-1008x1024.jpg " alt=" " style="padding: 10px;">
+                </div>
+                <div class="col-12 col-sm-12 col-md-7 col-lg-6 col-xl-9 p-3">
+                    <h4>Cargo/Função</h4>
+                    <p class="py-2">Pellentesque consequat mauris vel tellus fermentum, id iaculis magna ullamcorper. Donec varius tristique purus sit amet accumsan. Mauris sit amet tortor vitae turpis tincidunt luctus in pulvinar nibh. Phasellus vitae quam ut neque
+                        fringilla eleifend.</p>
+                </div>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end py-4 px-4">
+                <button type="button" class="btn btn-dark me-md-2">+ Carregar mais Experiências</button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Section github -->
+    <div class="bg-middle">
+        <div class="container">
+            <div class="row py-4">
+                <h2 class="col-xl-12">
+                    Repositórios GitHub
+                </h2>
+            </div>
+            <div id="repos" class="row repositorios">
+                
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end py-4 px-4">
+                <button type="button" class="btn btn-dark me-md-2 carregar">+ Carregar mais repositórios</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section recomendação -->
+
+    <div class="container">
+        <div class="row videos">
+            <h2>Recomendação de Conteúdo</h2>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                <iframe src="https://www.youtube.com/embed/6KGAS7Ppekk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>ICEI Talks - Carreira na Industria de Jogos: qual caminho trilhar? </p>
+            </div>
+            <div class="col-lg-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                <iframe src="https://www.youtube.com/embed/gd55em79314" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>ICEI Talks #carreira - Desvendando o universo de UX Design</p>
+            </div>
+            <div class="col-lg-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                <iframe src="https://www.youtube.com/embed/ANy6FH0uX-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>ICEI Talks- Organização de times ágeis: squads, tribos, guildas</p>
+            </div>
+        </div>
+    </div>
+
+    <!--
+        Footer
+    -->
+    <footer class="footer bg-middle">
+        <div class="row">
+            <div class="col-6 pt-4">
+                <p class="">Copyright 2020 - Diciplina de Desenvolvimento de Interfaces Web - <b>ICEI PUC MINAS</b></p>
+            </div>
+            <div class="col-6 d-grid gap-2 d-md-flex justify-content-md-end">
+                <img src="https://www.pucminas.br/pos/letras/noticias/PublishingImages/Paginas/COMUNICADO/Brasao%20PUC%20Minas%20aplicacao_cinza.png" alt="" width="70px" height="60px">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>
